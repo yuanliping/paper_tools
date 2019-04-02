@@ -93,7 +93,7 @@ MacOS系统安装tor教程。
 
 ##### ss代理原理：
 
-<img src='https://ws2.sinaimg.cn/large/006tKfTcly1g1ol5um9n1j30s60vgadt.jpg' style='width:400px'>
+<img src='https://ws2.sinaimg.cn/large/006tKfTcly1g1ol5um9n1j30s60vgadt.jpg' style='width:50%'>
 
 
 
