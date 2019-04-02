@@ -93,5 +93,5 @@ MacOS系统安装tor教程。
 
 ##### ss代理原理：
 
-![](/Users/lipingyuan/Downloads/tor_proxy.svg)
+![](tor_proxy.svg)
 
