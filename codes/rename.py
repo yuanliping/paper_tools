@@ -1,11 +1,13 @@
 from PyPDF2 import PdfFileReader
 from shutil import move
+import os
 
-PAPER_DIR = 'acl_2016/'
+PAPER_DIR = '../../acl_2018/'
 
-for i in range(1, 232):
-    file_path = PAPER_DIR + str(i).rjust(3, '0') + '.pdf'
-
+for file in os.listdir(PAPER_DIR):
+    if ".pdf" not in file:
+        continue
+    file_path = "{}{}".format(PAPER_DIR, file)
     pdf_reader = PdfFileReader(open(file_path, 'rb'))
     paper_title = str(pdf_reader.getDocumentInfo().title)
 

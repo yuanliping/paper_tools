@@ -12,7 +12,7 @@ TOR_PORT = 9050
 CONTROL_PORT = 9051
 TOR_PASSWORD = 'mypassword'
 
-PAPER_DIR = '../acl_2016/'
+PAPER_DIR = '../acl_2018/'
 available_url = [
     'https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q='
 ]
@@ -39,7 +39,7 @@ file_names = []
 check_cite = re.compile('\d+_cited_')
 for root, dirs, files in os.walk(PAPER_DIR):
     for file in files:
-        if re.search(check_cite, file):
+        if '.pdf' not in file or re.search(check_cite, file):
             continue
         file_name = file.split('.')[0]
         file_names.append(file_name)
